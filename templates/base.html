@@ -1,7 +1,7 @@
 {% import 'macros.html' as macros %}
 
 <!DOCTYPE html>
-<html lang="{{lang}}">
+<html lang="{{ lang | default (value=config.default_language) }}">
 
 <head>
   <meta charset="utf-8" />
